@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminDialog</class>
+ <widget class="QWidget" name="AdminDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>管理员预约管理</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="filterLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="searchLayout">
+     <item>
+      <widget class="QLineEdit" name="searchLineEdit">
+       <property name="placeholderText">
+        <string>请输入查询内容</string>
+       </property>
+       <property name="minimumWidth">
+        <number>120</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="searchTypeCombo">
+       <item>
+        <property name="text">
+         <string>按专家姓名</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按患者姓名</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按联系电话</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="searchBtn">
+       <property name="text">
+        <string>查询</string>
+       </property>
+       <property name="maximumWidth">
+        <number>60</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="appointmentTable">
+     <column>
+      <property name="text">
+       <string>患者姓名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+        <string>身份证号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>性别</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>年龄</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>预约日期</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>联系电话</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>症状描述</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>专家姓名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>专家科室</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>时间段</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>排队号</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="importDataBtn">
+       <property name="text">
+        <string>导入数据</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exportAppointmentBtn">
+        <property name="text">
+          <string>导出预约数据</string>
+        </property>
+      </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exportExpertBtn">
+        <property name="text">
+          <string>导出专家数据</string>
+        </property>
+          </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="changeExpertBtn">
+        <property name="text">
+          <string>修改专家数据</string>
+        </property>
+          </widget>
+      </item>
+     <item>
+      <widget class="QPushButton" name="changePasswordBtn">
+       <property name="text">
+        <string>修改密码</string>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addAppointmentBtn">
+       <property name="text">
+        <string>增加预约</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

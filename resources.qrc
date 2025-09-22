@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>styles/application.qss</file>
+        <file>images/hospital_logo.png</file>
+        <file>images/doctor.png</file>
+        <file>bin/libcrypto-1_1-x64.dll</file>
+        <file>bin/libssl-1_1-x64.dll</file>
+        <file>resource/experts.json</file>
+        <file>resource/appointments.json</file>
+    </qresource>
+</RCC>

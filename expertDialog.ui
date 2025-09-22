@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExpertDialog</class>
+ <widget class="QDialog" name="ExpertDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>专家工作站</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="expertInfoGroup">
+     <property name="title">
+      <string>个人信息</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="idLabel">
+        <property name="text">
+         <string>专家编号：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="idInput"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="nameLabel">
+        <property name="text">
+         <string>姓名：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="nameInput"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="genderLabel">
+        <property name="text">
+         <string>性别：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="genderInput"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="ageLabel">
+        <property name="text">
+         <string>年龄：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="ageSpinBox"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="expertTitleLabel">
+        <property name="text">
+         <string>职称：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="titleInput"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="departmentLabel">
+        <property name="text">
+         <string>科室：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="departmentInput"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="timeLabel">
+        <property name="text">
+         <string>服务时间：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="timeInput"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="passwordLabel">
+        <property name="text">
+         <string>密码：</string>
+        </property>
+       </widget>
+      </item>
+      
+      <item row="7" column="1">
+       <widget class="QPushButton" name="changePasswordBtn">
+        <property name="text">
+         <string>修改密码</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="appointmentTab">
+      <attribute name="title">
+       <string>预约信息</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTableView" name="appointmentTable"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="scheduleTab">
+      <attribute name="title">
+       <string>出诊安排</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCalendarWidget" name="calendar"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="addScheduleBtn">
+           <property name="text">
+            <string>设为出诊日</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="cancelScheduleBtn">
+           <property name="text">
+            <string>取消出诊</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="setClosedBtn">
+           <property name="text">
+            <string>设为停诊日</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="timeSlotLabel">
+           <property name="text">
+            <string>服务时间段：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="timeSlotInput">
+           <property name="placeholderText">
+            <string>格式: 09:00-12:00</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="capacityLabel">
+           <property name="text">
+            <string>人数上限：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="capacityInput">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="serviceTimeGroup">
+     <property name="title">
+      <string>服务时间段</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QListWidget" name="serviceTimeList"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="addServiceTimeBtn">
+          <property name="text">
+           <string>增加时间段</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="deleteServiceTimeBtn">
+          <property name="text">
+           <string>删除时间段</string>
+          </property>
+         </widget>
+        </item>
+        <!-- 添加设置容量按钮 -->
+        <item>
+         <widget class="QPushButton" name="setCapacityBtn">
+          <property name="text">
+           <string>设置容量</string>
+          </property>
+          <property name="toolTip">
+           <string>设置选中时间段的最大预约人数</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="saveButton">
+       <property name="text">
+        <string>保存修改</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="closeButton">
+       <property name="text">
+        <string>关闭</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="calendarLegendLabel">
+     <property name="text">
+      <string>绿色: 出诊日 | 红色: 停诊日 | 蓝色: 常规出诊日</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

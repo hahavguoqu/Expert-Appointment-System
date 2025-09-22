@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PatientDialog</class>
+ <widget class="QWidget" name="PatientDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>患者预约</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="nameLabel">
+       <property name="text">
+        <string>姓名：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="nameInput">
+       <property name="placeholderText">
+        <string>请输入姓名</string>
+       </property>
+      </widget>
+     </item>
+     
+     <item row="1" column="0">
+      <widget class="QLabel" name="idLabel">
+       <property name="text">
+        <string>身份证号：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="idInput">
+       <property name="placeholderText">
+        <string>请输入身份证号</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="2" column="0">
+      <widget class="QLabel" name="genderLabel">
+       <property name="text">
+        <string>性别：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="genderInput">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+
+     <item row="3" column="0">
+      <widget class="QLabel" name="ageLabel">
+       <property name="text">
+        <string>年龄：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSpinBox" name="ageSpinBox">
+       <property name="minimum">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <number>150</number>
+       </property>
+      </widget>
+     </item>
+
+     <item row="4" column="0">
+      <widget class="QLabel" name="phoneLabel">
+       <property name="text">
+        <string>联系电话：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="phoneInput">
+       <property name="placeholderText">
+        <string>请输入联系电话</string>
+       </property>
+      </widget>
+     </item>
+
+     <!-- 预约信息 -->
+     <item row="5" column="0">
+      <widget class="QLabel" name="departmentLabel">
+       <property name="text">
+        <string>科室选择：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="departmentCombo"/>
+     </item>
+
+     <item row="6" column="0">
+      <widget class="QLabel" name="expertLabel">
+       <property name="text">
+        <string>专家选择：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="expertCombo"/>
+     </item>
+
+     <item row="7" column="0">
+      <widget class="QLabel" name="timeLabel">
+       <property name="text">
+        <string>预约时间段：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QComboBox" name="serviceTimeCombo">
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>请选择预约时间段</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="dateLabel">
+       <property name="text">
+        <string>预约日期：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QDateEdit" name="appointmentDateEdit">
+       <property name="displayFormat">
+        <string>yyyy年MM月dd日</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   
+   <item>
+    <widget class="QLabel" name="symptomsLabel">
+     <property name="text">
+      <string>症状描述：</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="symptomsText">
+     <property name="placeholderText">
+      <string>请详细描述您的症状...</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="submitButton">
+       <property name="text">
+        <string>提交预约</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

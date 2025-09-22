@@ -1,0 +1,87 @@
+[
+    {
+        "age": 40,
+        "closedDates": [
+        ],
+        "gender": "男",
+        "id": "1001",
+        "name": "张三",
+        "password": "123456",
+        "scheduleDates": [
+            "2025-09-18"
+        ],
+        "serviceTimes": [
+            "周一：08:00-12:00",
+            "周三：14:00-17:00",
+            "周五：09:00-11:00",
+            "09-18：09:00-11:00"
+        ],
+        "subject": "内科",
+        "timeSlotCapacity": {
+            "09-18：09:00-11:00": 5,
+            "周一：08:00-12:00": 15,
+            "周三：14:00-17:00": 12,
+            "周五：09:00-11:00": 8
+        },
+        "title": "主任医师"
+    },
+    {
+        "age": 38,
+        "closedDates": [
+        ],
+        "gender": "女",
+        "id": "1002",
+        "name": "李四",
+        "password": "123456",
+        "scheduleDates": [
+        ],
+        "serviceTimes": [
+            "周二：09:00-12:00",
+            "周四：14:00-18:00"
+        ],
+        "subject": "外科",
+        "timeSlotCapacity": {
+            "周二：09:00-12:00": 20,
+            "周四：14:00-18:00": 18
+        },
+        "title": "副主任医师"
+    },
+    {
+        "age": 45,
+        "closedDates": [
+        ],
+        "gender": "男",
+        "id": "1003",
+        "name": "王五",
+        "password": "123456",
+        "scheduleDates": [
+        ],
+        "serviceTimes": [
+            "周一：08:30-11:30",
+            "周三：13:30-16:30"
+        ],
+        "subject": "儿科",
+        "timeSlotCapacity": {
+            "周一：08:30-11:30": 20,
+            "周三：13:30-16:30": 18
+        },
+        "title": "主治医师"
+    },
+    {
+        "age": 88,
+        "closedDates": [
+        ],
+        "gender": "男",
+        "id": "1004",
+        "name": "刘希",
+        "password": "123456",
+        "scheduleDates": [
+        ],
+        "serviceTimes": [
+        ],
+        "subject": "眼鼻耳喉科",
+        "timeSlotCapacity": {
+        },
+        "title": "主任医生"
+    }
+]
