@@ -1,0 +1,39 @@
+# 忽略构建目录（根据你的构建习惯选择，常见的如build、Build、debug、release等）
+build/
+Build/
+*/build/*
+debug/
+release/
+
+# 忽略编译产生的目标文件和可执行文件
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+
+# 忽略Qt特定的编译中间文件
+moc_*
+*.moc
+ui_*
+qrc_*
+Makefile*
+*.qmake.stash
+
+# 忽略Qt Creator相关的用户配置
+*.user
+*.user.*
+
+# 忽略平台相关的文件
+.DS_Store
+Thumbs.db
+
+# 如果你使用其他IDE，也可以忽略它们的配置文件夹
+# .vs/
+# .vscode/
+# .idea/
+
+# 忽略可能的日志文件
+*.log
