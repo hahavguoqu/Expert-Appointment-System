@@ -1,4 +1,4 @@
----
+**Read this in: [English](README.md) | [简体中文](README.zh.md)**
 
 # Hospital Expert Appointment System
 
@@ -71,7 +71,7 @@ HospitalExpertAppointmentSystem/
 │
 ├── images/
 │   ├── doctor.png                    
-│   └── hospital_logo.png             
+│   └─── hospital_logo.png             
 │   
 │
 ├── styles/    
@@ -81,7 +81,6 @@ HospitalExpertAppointmentSystem/
 └── resource/                      
     ├── experts.json                 
     └── appointments.json         
-
 ```
 
 ## 📄 License
