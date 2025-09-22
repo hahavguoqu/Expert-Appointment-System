@@ -71,7 +71,7 @@ HospitalExpertAppointmentSystem/
 │
 ├── images/
 │   ├── doctor.png                    
-│   └─── hospital_logo.png             
+│   └── hospital_logo.png             
 │   
 │
 ├── styles/    

@@ -25,15 +25,12 @@ Makefile*
 # 忽略Qt Creator相关的用户配置
 *.user
 *.user.*
+*.pro.user
+*.pro.user.*
 
 # 忽略平台相关的文件
 .DS_Store
 Thumbs.db
-
-# 如果你使用其他IDE，也可以忽略它们的配置文件夹
-# .vs/
-# .vscode/
-# .idea/
 
 # 忽略可能的日志文件
 *.log
