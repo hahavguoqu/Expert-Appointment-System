@@ -20,33 +20,6 @@ A comprehensive and user-friendly desktop application for managing medical exper
 -   **Builder**: QMake
 -   **Data Storage**: JSON
 
-## 🚀 Getting Started
-
-### Prerequisites
-
--   A computer with Qt 5 development libraries installed.
--   A C++ compiler (e.g., MinGW for Windows, GCC for Linux, Clang for macOS).
-
-### Installation & Running
-
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/YourUsername/YourProjectName.git
-    cd YourProjectName
-    ```
-
-2.  **Open the Project**:
-    -   Open the `.pro` file in Qt Creator.
-    -   Alternatively, use `qmake` and `make` from the command line:
-        ```bash
-        qmake
-        make
-        ```
-
-3.  **Run the Application**:
-    -   In Qt Creator, click the "Run" button.
-    -   From the command line, launch the generated executable (e.g., `./HospitalAppointmentSystem` on Linux, `release/HospitalAppointmentSystem.exe` on Windows).
-
 ## 👨💻 Default Login Accounts
 
 For testing and demonstration purposes, the following expert accounts are pre-configured in the system. The default password for all accounts is **`123456`**.
@@ -85,8 +58,3 @@ This project is licensed under a Non-Commercial License.
 
 You are free to use, copy, and modify this project for personal or educational purposes.
 Commercial use of any kind is strictly prohibited.
-
-
----
-
-**Note**: This is a demo application. For security in a production environment, please change the default passwords and implement a more secure authentication system.
