@@ -15,9 +15,10 @@ A comprehensive and user-friendly desktop application for managing medical exper
 
 ## 🛠️ Tech Stack
 
--   **Framework**: Qt 5
+-   **Framework**: Qt 5.12.10
 -   **Language**: C++11
--   **Builder**: QMake
+-   **Builder**: QMake 
+-   **Compiler**：MinGW_64
 -   **Data Storage**: JSON
 
 ## 👨💻 Default Login Accounts
@@ -26,10 +27,10 @@ For testing and demonstration purposes, the following expert accounts are pre-co
 
 | Expert ID | Expert Name | Department | Title         |
 | :-------: | :---------- | :--------- | :------------ |
-|   1001    | 张三 (Zhang San) | 内科         | 主任医师        |
-|   1002    | 李四 (Li Si)    | 外科         | 副主任医师      |
-|   1003    | 王五 (Wang Wu)  | 儿科         | 主治医师        |
-|   1004    | 赵六 (Zhao Liu) | 眼科         | 专家医师        |
+|   1001    | 张三 | 内科         | 主任医师        |
+|   1002    | 李四    | 外科         | 副主任医师      |
+|   1003    | 王五  | 儿科         | 主治医师        |
+|   1004    | 赵六 | 眼科         | 专家医师        |
 
 **Administrator Access**:
 -   **Password**: `123456`
@@ -37,19 +38,50 @@ For testing and demonstration purposes, the following expert accounts are pre-co
 ## 📁 Project Structure
 
 ```
-.
-├── src/                    # Source code files
-│   ├── mainwindow.h/cpp    # Main window controller
-│   ├── expertManager.h/cpp # Expert data management logic
-│   ├── appointmentManager.h/cpp # Appointment management logic
-│   ├── adminDialog.h/cpp    # Admin UI and logic
-│   ├── expertDialog.h/cpp   # Expert UI and logic
-│   ├── patientDialog.h/cpp  # Patient UI and logic
-│   ├── aiChatDialog.h/cpp  # AI Assistant UI and logic
-│   └── ...                 # Other headers and sources
-├── data/                   # JSON data files (optional)
-├── resources/              # Application resources (images, stylesheets)
-└── HospitalAppointmentSystem.pro # Qt Project file
+HospitalExpertAppointmentSystem/  
+│
+├── HospitalExpertAppointmentSystem.pro    
+├── .gitignore                            
+├── README.md                         
+│
+├── main.cpp                          
+├── mainwindow.h                     
+├── mainwindow.cpp                      
+├── expert.h                           
+├── expert.cpp                         
+├── appointment.h                    
+├── appointment.cpp                   
+├── expertManager.h                   
+├── expertManager.cpp               
+├── appointmentManager.h               
+├── appointmentManager.cpp              
+├── adminDialog.h                      
+├── adminDialog.cpp                   
+├── expertDialog.h                     
+├── expertDialog.cpp                   
+├── patientDialog.h                 
+├── patientDialog.cpp                 
+├── aiChatDialog.h  
+├── aiChatDialog.cpp                  
+├── adminDialog.ui
+├── expertDialog.ui
+├── patientDialog.ui
+├── aiChatDialog.ui
+├── mainwindow.ui
+│
+├── images/
+│   ├── doctor.png                    
+│   └─── hospital_logo.png             
+│   
+│
+├── styles/    
+│   └── application.qss
+│   
+│
+└── resource/                      
+    ├── experts.json                 
+    └── appointments.json         
+
 ```
 
 ## 📄 License
